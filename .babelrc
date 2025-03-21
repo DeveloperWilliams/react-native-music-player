@@ -1,0 +1,16 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    "react-native-reanimated/plugin",
+    [
+      "module-resolver",
+      {
+        "cwd": "babelrc",
+        "extensions": [".ts", ".tsx", ".js"],
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ]
+  ]
+}
